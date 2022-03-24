@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Template</title>
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- normalize -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- main.css -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div id="special-design">
+    <!-- start settings box -->
+    <div class="settings">
+      <div class="icon">
+        <i class="fas fa-cog "></i>
+      </div>
+      <div class="setting-container">
+        <!-- colors  -->
+        <div class="option-box">
+          <h4>colors</h4>
+          <ul class="colors-list">
+            <li data-color="#FFB830" ></li>
+            <li data-color="#007bff"></li>
+            <li data-color="#55E6C1"></li>
+            <li data-color="#a362ff" ></li>
+            <li data-color="#ff055a"  class="active"></li>
+          </ul>
+          <h4>Choose Color</h4>
+          <input type="color" id="choose-color"  class="field-radio" name="primary-color"> 
+        </div>
+        <!-- image  -->
+          <div class="option-box">
+            <div class="background">
+              <div class="Title">background adjustment</div>
+              <div class="box">
+                <label>
+                  <div>contrast</div>
+                  <div class="range-number" data-range="100">100</div>
+                </label>
+                <input type="range" step="1" min="0" max="200" id="contrast" value="100%">
+              </div>
+              <div class="box">
+                <label>
+                  <div>hue</div>
+                  <div class="range-number" data-range="0">0</div>
+                </label>
+                <input type="range" step="1" min="-360" max="360" id="hue-rotate" value="0deg">
+              </div>
+              <div class="box">
+                <label>
+                  <div>brightness</div>
+                  <div class="range-number" data-range="100">100</div>
+                </label>
+                <input type="range" step="1" min="0" max="200" id="brightness" value="100%">
+              </div>
+              <button class="reset" id="reset-inputs">reset</button>
+            </div>
+          </div>
+        <!-- random background  -->
+        <div class="option-box">
+          <h4>Random Background</h4>
+          <div class="rand-background">
+            <span class="yes " id="yes">Yes</span>
+            <span class="no active" id="no">No</span>
+          </div>
+        </div>
+        <!-- show bullets  -->
+        <div class="option-box">
+          <h4>Show Bullets</h4>
+          <div class="show-bullets">
+            <span class="yes active" >Yes</span>
+            <span class="no" >No</span>
+          </div>
+        </div>
+        <!-- reset  -->
+        <div class="option-box">
+          <button class="reset-options" id="reset">Reset Options</button>
+        </div>
+      </div>
+
+    </div>
+    <!-- end settings box -->
+    <!-- =================================================================================== -->
+    <!-- Start Nav Butllets  -->
+    <div class="nav-bullets">
+      <div class="bullet" data-section="about us"><a href="#about"></a></div>
+      <div class="bullet" data-section="our skills"><a href="#skills"></a></div>
+      <div class="bullet" data-section="timeline"><a href="#timeline"></a></div>
+      <div class="bullet" data-section="our gallery"><a href="#gallery"></a></div>
+    </div>
+    <!-- End Nav Butllets  -->
+    <!-- =================================================================================== -->
+    <!-- start header and landing page -->
+    <div class="land section"  id="home">
+      <header>
+        <div class="logo">
+          <a href="#home">
+            Special Design
+          </a>
+        </div>
+        <div class="links">
+          <ul>
+            <li data-link="home" class="active" >
+              <a href="#home"  >home</a>
+            </li>
+            <li data-link="about">
+              <a href="#about" >about us</a>
+            </li>
+            <li data-link="services">
+              <a href="#services" >features</a>
+            </li>
+            <li data-link="testi">
+              <a href="#testi"  >testimonials</a>
+            </li>
+            <li data-link="contact">
+              <a href="#contact" >contact us </a>
+            </li>
+          </ul>
+        </div>
+        <button class="toggle-menu" id="toggle-menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </header>
+      <div class="landing-page">
+        <div class="intro">
+          <h2>We are <span>Creative</span> Agency </h2>
+          <p>Lorem,  sit amet consectetur adipisicing elit. Alias est ad saepe accusantium eaque, repellendus praesentium incidunt ratione libero</p>
+        </div>
+      </div> 
+    </div>
+    <!-- End header and landing page-->
+    <!-- ================================================================================== -->
+    <!-- Start About -->
+    <div class="container">
+      <div class="about section" id="about">
+        <div class="info">
+          <h2>About Us</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores velit accusamus exercitationem incidunt eaque nihil voluptatibus fugit officiis dicta, consequuntur commodi beatae quia. Asperiores explicabo deserunt officia tempora rerum magnam!</p>
+        </div>
+        <div class="image-box">
+          <img class="lozad" data-src="images/about1.svg" src="images/about1.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- End About -->
+    <!-- =================================================================================== -->
+    <!-- Start Our Skills -->
+    <div class="container">
+      <div class="skills" id="skills">
+        <div class="box">
+        <h2>Our Skills</h2>
+        <div class="skill-box" >
+          <div class="skill-name">HTML</div>
+          <div class="skill-percent">
+            <div class="skill-progress" data-width="90%"></div>
+          </div>
+          <div class="skill-value">90%</div>
+        </div>
+        <div class="skill-box" >
+          <div class="skill-name">CSS</div>
+          <div class="skill-percent">
+            <div class="skill-progress" data-width="83%"></div>
+          </div>
+          <div class="skill-value">83%</div>
+        </div>
+        <div class="skill-box" >
+          <div class="skill-name">JAVASCRIPT</div>
+          <div class="skill-percent">
+            <div class="skill-progress" data-width="74%"></div>
+          </div>
+          <div class="skill-value">74%</div>
+        </div>
+        <div class="skill-box" >
+          <div class="skill-name">PHOTOSHOP</div>
+          <div class="skill-percent">
+            <div class="skill-progress" data-width="62%"></div>
+          </div>
+          <div class="skill-value">62%</div>
+        </div>
+      </div>
+      </div>
+    </div> 
+    <!-- End Our Skills -->
+    <!-- =================================================================================== -->
+    <!-- Start Timeline  -->
+    <div class="container">
+      <div class="timeline" id="timeline">
+        <div class="timeLine-container">
+          <div class="timeLine-box">
+            <h2 class="title">Heading 1</h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem nostrum assumenda porro cupiditate obcaecati ut perspiciatis, voluptas ipsam fugit odio!</p>
+            <span>2013</span>
+          </div>
+          <div class="timeLine-empty"></div>
+          <div class="timeLine-empty"></div>
+          <div class="timeLine-box">
+            <h2 class="title">Heading 2</h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem nostrum assumenda porro cupiditate obcaecati ut perspiciatis, voluptas ipsam fugit odio!</p>
+            <span>2014</span>
+          </div>
+          <div class="timeLine-box">
+          <div class="timeLine-empty"></div>
+            <h2 class="title">Heading 3</h2>
+            <span>2015</span>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem nostrum assumenda porro cupiditate obcaecati ut perspiciatis, voluptas ipsam fugit odio!</p>
+          </div>
+          <div class="timeLine-empty"></div>
+          <div class="timeLine-empty"></div>
+          <div class="timeLine-box">
+            <h2 class="title">Heading 4</h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem nostrum assumenda porro cupiditate obcaecati ut perspiciatis, voluptas ipsam fugit odio!</p>
+            <span>2016</span>
+          </div>
+          <div class="timeLine-box">
+            <h2 class="title">Heading 5</h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem nostrum assumenda porro cupiditate obcaecati ut perspiciatis, voluptas ipsam fugit odio!</p>
+            <span>2017</span>
+          </div>
+          <div class="timeLine-empty"></div>
+          <div class="timeLine-empty"></div>
+          <div class="timeLine-box">
+            <h2 class="title">Heading 6</h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem nostrum assumenda porro cupiditate obcaecati ut perspiciatis, voluptas ipsam fugit odio!</p>
+            <span>2018</span>
+          </div>
+          <div class="timeLine-box">
+            <h2 class="title">Heading 7</h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem nostrum assumenda porro cupiditate obcaecati ut perspiciatis, voluptas ipsam fugit odio!</p>
+            <span>2019</span>
+          </div>
+          <div class="timeLine-empty"></div>
+          <div class="timeLine-empty"></div>
+          <div class="timeLine-box">
+            <h2 class="title">Heading 8</h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem nostrum assumenda porro cupiditate obcaecati ut perspiciatis, voluptas ipsam fugit odio!</p>
+            <span>2020</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Timeline  -->
+    <!-- =================================================================================== -->
+    <!-- =================================================================================== -->
+    <!-- Start Gallery -->
+    <div class="container">
+      <div class="gallery" id="gallery">
+        <h2 > Our Gallery</h2>
+        <div class="images-container">
+          <img class="lozad" data-src="images/img1.jpg" src="images/img1.jpg" alt="Image One" width="200" height="200">
+          <img class="lozad" data-src="images/img2.jpg" src="images/img2.jpg" alt="Image Two" width="200" height="200">
+          <img class="lozad" data-src="images/img3.jpg" src="images/img3.jpg" alt="Image Three" width="200" height="200">
+          <img class="lozad" data-src="images/img4.jpg" src="images/img4.jpg" alt="Image Four" width="200" height="200">
+          <img class="lozad" data-src="images/img5.jpg" src="images/img5.jpg" alt="Image Five" width="200" height="200">
+          <img class="lozad" data-src="images/img6.jpg" src="images/img6.jpg" alt="" width="200" height="200">
+          <img class="lozad" data-src="images/img7.jpg" src="images/img7.jpg" alt="" width="200" height="200">
+          <img class="lozad" data-src="images/img8.jpg" src="images/img8.jpg" alt="" width="200" height="200">
+        </div>
+      </div>
+    </div>
+    <!-- End Gallery -->
+    <!-- Start Services -->
+    <div class="container">
+      <div class="services section" id="services">
+        <section class="service-section">
+          <h2>Features</h2>
+          <div class="service-container">
+            <div class="service-box">
+              <div class="icon-box">
+                <i class="fa fa-briefcase service-icon"></i>
+                <p class="service-title">lorem Ipsum</p>
+                <p class="service-para">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              </div>
+            </div>
+            <div class="service-box">
+              <div class="icon-box">
+                <i class="fa fa-clipboard service-icon"></i>
+                <p class="service-title">lorem Ipsum</p>
+                <p class="service-para">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+              </div>
+            </div>
+            <div class="service-box">
+              <div class="icon-box">
+                <i class="fa fa-chart-bar service-icon"></i>
+                <p class="service-title">lorem Ipsum</p>
+                <p class="service-para">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+              </div>
+            </div>
+            <div class="service-box">
+              <div class="icon-box">
+                <i class="fa fa-binoculars service-icon"></i>
+                <p class="service-title">lorem Ipsum</p>
+                <p class="service-para">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+              </div>
+            </div>
+            <div class="service-box">
+              <div class="icon-box">
+                <i class="fa fa-cog service-icon"></i>
+                <p class="service-title">lorem Ipsum</p>
+                <p class="service-para">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+              </div>
+            </div>
+            <div class="service-box">
+              <div class="icon-box">
+                <i class="fa fa-calendar-alt service-icon"></i>
+                <p class="service-title">lorem Ipsum</p>
+                <p class="service-para">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- End Services -->
+    <!-- =================================================================================== -->
+    <!-- Start testimonials  -->
+    <div class="container">
+      <div class="testi section" id="testi" >
+        <div class="circle-left"></div>
+        <div class="circle-right"></div>
+        <div class="testi-container">
+          <div class="testi-box">
+            <div class="testi-user">
+              <i class="fas fa-user-secret"></i>
+            </div>
+              <h2>someone famous</h2>
+              <p>Lorem ipsum do lorem isicing elit. Ducimus ipsam ncidunt laboriosam dicta qui reiciendis eos sint reprehenderit magnam eum ut, odit quis corrupti!</p>
+              <div class="testi-icons">
+                <a href='e404.html'><i class="fab fa-facebook-f"></i></a>
+                <a href='e404.html'><i class="fab fa-twitter"></i></a>
+                <a href='e404.html'><i class="fab fa-youtube"></i></a>
+                <a href='e404.html'><i class="fab fa-instagram"></i></a>
+                <div class="cursor"></div>
+            </div>
+          </div>
+          <div class="testi-box">
+            <div class="testi-user">
+              <i class="fas fa-user-secret"></i>
+            </div>
+              <h2>someone famous</h2>
+              <p>Lorem ipsum do lorem isicing elit. Ducimus ipsam ncidunt laboriosam dicta qui reiciendis eos sint reprehenderit magnam eum ut, odit quis corrupti!</p>
+              <div class="testi-icons">
+                <a href='e404.html'><i class="fab fa-facebook-f"></i></a>
+                <a href='e404.html'><i class="fab fa-twitter"></i></a>
+                <a href='e404.html'><i class="fab fa-youtube"></i></a>
+                <a href='e404.html'><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="testi-box">
+            <div class="testi-user">
+              <i class="fas fa-user-secret"></i>
+            </div>
+              <h2>someone famous</h2>
+              <p>Lorem ipsum do lorem isicing elit. Ducimus ipsam ncidunt laboriosam dicta qui reiciendis eos sint reprehenderit magnam eum ut, odit quis corrupti!</p>
+              <div class="testi-icons">
+                <a href='e404.html'><i class="fab fa-facebook-f"></i></a>
+                <a href='e404.html'><i class="fab fa-twitter"></i></a>
+                <a href='e404.html'><i class="fab fa-youtube"></i></a>
+                <a href='e404.html'><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End testimonials  -->
+    <!-- =================================================================================== -->
+    <!-- Start contact -->
+    <div class="contact section " id="contact">
+      <div class="overlay"></div>
+      <div class="container ">
+        <h2>contact us</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur ea quia totam accusantium eius aspernatur?</p>
+        <div class="contact-container">
+          <div class="contact-info">
+            <div class="contact-box">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="text">
+                <span>Address</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <div class="contact-box">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="text">
+                <span>Phone</span>
+                <p>323-857-295</p>
+              </div>
+            </div>
+            <div class="contact-box">
+              <div class="contact-icon">
+                <i class="far fa-envelope"></i>
+              </div>
+              <div class="text">
+                <span>Email</span>
+                <p>dolorsit837@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact-form">
+            <h4>Send Message</h4>
+            <form action="">
+              <div class="name">
+                <input type="text" placeholder="Full Name" id="name">
+              </div>
+              <div class="email">
+                <input type="email" placeholder="Email" id="email">
+              </div>
+              <div class="message" data-message="0">
+                <input type="text" placeholder="Type your Message.." id="message">
+              </div>
+              <input type="submit" value="send" id="submit">
+            </form>
+          </div>
+        </div>
+    </div>
+    <!-- End contact -->
+    <!-- =================================================================================== -->
+    <!-- Start Products -->
+        <div class="products" id="products"></div>
+    <!-- End Products -->
+    <!-- =================================================================================== -->
+  </div>
+  <footer>Created with <i class="fas fa-heart"></i> By Hamza</footer>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html
+
